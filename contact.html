@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent a Car Romania-Contact
+    </title>
+    <script>
+      function submitForm(){
+          alert("Success !", "the message was not sent !")
+          window.location.href="home.html"
+      }
+
+    </script>
+    <style>
+        h1{
+            color: rgb(0, 0, 0);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+        }
+        #top_meniu{
+            background-color: rgb(255, 216, 239);
+            
+            
+        }
+        #meniu_item{
+            font-size: medium;
+            
+            
+
+        }
+        #top_menu{
+          text-align: left;
+        }
+        table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+}
+   
+    </style>
+
+</head>
+<body>
+    <div id = "top_meniu">
+        <h1>Rent a Car Global</h1>
+        <p  id="meniu_item"><ol><list><a href="home.html">Home</a></list></ol>
+            <ol><list><a href="info.html">Informations</a></list></ol>
+            <ol><list>Contacts</list><ol></ol></p><br>
+            
+        
+    </div>
+    <div id="top_menu">
+      
+      <p>This table is for sending us information about the car you want to rent</p>
+      <form id="contact_form" action="" method="POST" enctype="multipart/form-data">
+      
+        <label for="cars">Choose a car</label>
+        
+        <select name="cars" id="cars">
+          <option value="audi">Audi A6</option>
+          <option value="audi">BMW Seria 7</option>
+          <option value="audi">Mercedes Benz S</option>
+        </select>
+        <br>
+        <div class="row">
+          <label class="required" for="name">Your name:</label><br />
+          <input id="name" class="input" name="name" type="text" value="" size="30" required/><br />
+          <span id="name_validation" class="error_message"></span>
+        </div>
+        <div class="row">
+          <label class="required" for="email">Your email:</label><br />
+          <input id="email" class="input" name="email" type="text" value="" size="30" required/><br />
+          <span id="email_validation" class="error_message"></span>
+        </div>
+        <div class="row">
+          <label class="required" for="message">Your message:</label><br />
+          <textarea id="message" class="input" name="message" rows="7" cols="30" required></textarea><br />
+          <span id="message_validation" class="error_message"></span>
+        </div>
+          
+        <input id="submit_button" action="#" method="post" type="submit" value="Send email" onclick="submitForm()"/>
+      </form>
+    </div>
+    <br>
+   
+  <h2>Drivers</h2>
+<p>These are the drivers who have rented the most cars over the years</p>
+
+<table style="width: 50%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+    <th>Location</th>
+  </tr>
+  <tr>
+    <td>Richard</td>
+    <td>Lengard</td>
+    <td>54</td>
+    <td>Chicago</td>
+  </tr>
+  <tr>
+    <td>Michael</td>
+    <td>Jack</td>
+    <td>61</td>
+    <td>Rio de Janeiro</td>
+  </tr>
+  <tr>
+    <td>Johnny</td>
+    <td>Dipsor</td>
+    <td>42</td>
+    <td>Munich</td>
+  </tr>
+</table>
+
+<br>
+<br>
+<br>
+
+
+<h3>Managers</h3>
+
+
+<table style="width: 50%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+    <th>Location</th>
+    <th>Email</th>
+    <th>Phone Number</th>
+
+  </tr>
+  <tr>
+    <td>Leon</td>
+    <td>Dimitri</td>
+    <td>38</td>
+    <td>Luxemburg</td>
+    <td>LeonDimitri@gmail.com</td>
+    <td>407552806436</td>
+  
+  </tr>
+  <tr>
+    <td>Kail</td>
+    <td>White</td>
+    <td>42</td>
+    <td>Milano</td>
+    <td>WhiteKail@yahoo.com</td>
+    <td>607936485161</td>
+  </tr>
+  <tr>
+    <td>Stefan</td>
+    <td>Evra</td>
+    <td>25</td>
+    <td>Sofia</td>
+    <td>EvraStefan@gmail.com</td>
+    <td>051730523759</td>
+  </tr>
+
+</table>
+<br>
+<br>
+<h4>Sub Managers</h4>
+<table style="width: 50%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+    <th>Location</th>
+    <th>Email</th>
+    <th>Phone Number</th>
+  </tr>
+  <tr>
+    <td>Muller</td>
+    <td>Tompson</td>
+    <td>31</td>
+    <td>Madrid</td>
+    <td>MullerTopson@gmail.com</td>
+    <td>07643731936</td>
+  </tr>
+  <tr>
+    <td>Lewa</td>
+    <td>Lionel</td>
+    <td>46</td>
+    <td>Moscow</td>
+    <td>LionelLewa@gmail.com</td>
+    <td>07148742092</td>
+  </tr>
+  <tr>
+    <td>Lorrente</td>
+    <td>Miguel</td>
+    <td>29</td>
+    <td>Lisabona</td>
+    <td>MIguelLorrente@gmail.com</td>
+    <td>07439762513</td>
+  </tr>
+</table>
+</body>
+</html>
